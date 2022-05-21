@@ -1,0 +1,75 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(blueprints.jpg);
+    background-size: cover;
+    background-position:center;
+    font-family: sans-serif;
+}
+
+.descriptionbox{
+    width: 320px;
+    height:500px;
+    background:#fff;
+    color:#000;
+    top:50%;
+    left:50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+
+}
+
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+h1{
+    margin:0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.descriptionbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.descriptionbox input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.descriptionbox input[type="project"], input[type="contract"], input[type="wdid"]{
+    border: none;
+    border-bottom: 1px solid rgb(178, 179, 180);
+    background: transparent;
+    outline: none;
+    height: 40px;
+    font-size:16px;
+    
+}
+
+.descriptionbox input[type="submit"]{
+    border:none;
+    outline:none;
+    height: 40px;
+    background: #1f91ee;
+    color: #fff;
+    font-size: 18px;
+    border-radius:20px;
+}
+
+.descriptionbox input [type="submit"]:hover {
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+}

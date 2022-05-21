@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>Project Description Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+<body>
+    <div class="descriptionbox">
+    <img src="hardhat.png" class="avatar">
+        <h1>STORMWATER REVIEW REPORT</h1>
+        <form>
+            <p>PROJECT NAME</p>
+            <input type="project" name="" placeholder="Enter Project Name" id="projectName">
+            <p>CONTRACT NUMBER/CO/RTE/PM</p>
+            <input type="contract" name="personName" placeholder="Enter Contract Number" id="contract">
+            <p>District:</p>
+            <select id="District" onchange="getSelectValue();">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+
+            </select>
+
+            <p>WDID NUMBER</p>
+            <input type="wdid" name="idNumber" placeholder="Enter WDID Number" id="wdid">
+
+
+            <script>
+                function getSelectValue(){
+                    var selectedValue = document.getElementById("District").value;
+                    console.log(selectedValue);
+                }
+            </script>
+            <br>
+            <br>
+
+            <input type="submit" name="" value="Next" id="submitButton">
+
+    </div>
+    <script src = "index.js">
+    </script>
+</body>
+</head>
+</html>
